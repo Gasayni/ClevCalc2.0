@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Drob">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/Result"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_weight="1"
+            android:background="#2e2f31"
+            android:hint="@string/Answer"
+            android:textColor="#a4cbc5"
+            android:textColorHint="#a4cbc5"
+            android:textSize="30sp"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/buttonC"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="3"
+                        android:background="#2e2f31"
+                        android:text="⎚"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+
+                    <Button
+                        android:id="@+id/buttonBracket"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="3"
+                        android:background="#2e2f31"
+                        android:text="( )"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+
+                    <Button
+                        android:id="@+id/buttonExp"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="3"
+                        android:background="#2e2f31"
+                        android:text="^"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+
+                    <Button
+                        android:id="@+id/buttonX"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="60dp"
+                        android:background="#a4cbc5"
+                        android:text="◀"
+                        android:textColor="#1b1b1b"
+                        android:textSize="24sp"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text=""
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+                </TableRow> <!--вторая строка-->
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <Button
+                        android:text="@string/equale"
+                        android:textColor="#1b1b1b"
+                        android:textSize="70sp"
+                        android:background="#a4cbc5"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+                </TableRow> <!--Третья строка (пустая)-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="%"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text=""
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text=""
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+
+                </TableRow> <!--четвертая строка-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="7"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="8"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="9"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+
+                </TableRow> <!--четвертая строка-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="4"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="5"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="6"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+
+                </TableRow> <!--четвертая строка-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="2"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="3"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+
+                </TableRow> <!--четвертая строка-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text=","
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text=""
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="24sp"/>
+
+                </TableRow> <!--четвертая строка-->
+
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25sp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:hint="Числитель"
+                        android:textColor="#a4cbc5"
+                        android:textColorHint="#a4cbc5"
+                        android:textSize="15sp"/>
+                </TableRow> <!--Первая строка-->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text=""
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="( )"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="^"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="#a4cbc5"
+                        android:text="◀"
+                        android:textColor="#1b1b1b"
+                        android:textSize="14sp"/>
+                </TableRow> <!--вторая строка-->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="7"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="8"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="9"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="@string/del"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+                </TableRow> <!--вторая строка-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="4"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="5"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="6"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="x"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+                </TableRow> <!--вторая строка-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="2"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="3"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="-"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+                </TableRow> <!--вторая строка-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text=","
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text=""
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="+"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+                </TableRow> <!--вторая строка-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:text=""
+                        android:background="#2e2f31"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </TableRow> <!--Третья строка (пустая)-->
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25sp"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:hint="Знаменатель"
+                        android:textColor="#a4cbc5"
+                        android:textColorHint="#a4cbc5"
+                        android:textSize="15sp"/>
+                </TableRow> <!--Первая строка-->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text=""
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="( )"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="^"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="#a4cbc5"
+                        android:text="◀"
+                        android:textColor="#1b1b1b"
+                        android:textSize="14sp"/>
+                </TableRow> <!--вторая строка-->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="7"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="8"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="9"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="@string/del"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+                </TableRow> <!--вторая строка-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="4"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="5"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="6"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="x"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+                </TableRow> <!--вторая строка-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="2"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="3"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="-"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+                </TableRow> <!--вторая строка-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text=","
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text=""
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#2e2f31"
+                        android:text="+"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="#a4cbc5"
+                        android:textSize="14sp"/>
+                </TableRow> <!--вторая строка-->
+
+
+
+            </TableLayout>
+
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#2e2f31"
+            android:textColor="#a4cbc5"
+            android:textSize="24sp"
+            android:text="@string/del"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#2e2f31"
+            android:textColor="#a4cbc5"
+            android:textSize="24sp"
+            android:text="x" /> <!--*-->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#2e2f31"
+            android:textColor="#a4cbc5"
+            android:textSize="24sp"
+            android:text="-" /> <!--_-->
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#2e2f31"
+            android:textColor="#a4cbc5"
+            android:textSize="24sp"
+            android:text="@string/plus" /> <!--+-->
+
+    </TableRow>
+
+</TableLayout>

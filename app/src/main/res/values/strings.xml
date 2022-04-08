@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GAS_Clev_Calc_3.0</string>
+    <string name="horizont">в горизонтальной ориентации</string>
+    <string name="vertical">в вертикальной ориентации</string>
+    <string name="Apps_menu">Еще приложения GASa</string>
+    <string name="Support_menu">Поддержите GASa!</string>
+    <string name="TellAbout_menu">Рассказать о приложении</string>
+    <string name="Answer">Ответ</string>
+    <string name="del">÷</string>
+    <string name="nine">9</string>
+    <string name="eight">8</string>
+    <string name="four">4</string>
+    <string name="nul">0</string>
+    <string name="point">.</string>
+    <string name="double_nul">00</string>
+    <string name="drob">▶</string>
+    <string name="plus">+</string>
+    <string name="equals">=</string>
+    <string name="equale">=</string>
+</resources>
